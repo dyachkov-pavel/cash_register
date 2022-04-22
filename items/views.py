@@ -3,9 +3,9 @@ import uuid
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 
+from .models import Item
 from .serializers import ItemSerializer
 from .utils import create_pdf_from_html, create_qrcode, create_receipt_html
-from .models import Item
 
 
 @api_view(['POST'])
@@ -15,7 +15,7 @@ def generate_cheque(request):
         ids = request.data.get('items')
         items = Item.objects.filter(id__in=ids)
         if not items:
-            return Response({'error': 'No items found'})
+            return Response({'error': 'no items found'})
         unique_id = str(uuid.uuid4())[:8]
         create_receipt_html(ids, items)
         create_pdf_from_html(unique_id)

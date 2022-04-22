@@ -30,7 +30,6 @@ def create_receipt_html(items_id: List[int], items) -> None:
     """
     fname = 'last_generated_cheque.html'
     c = Counter(items_id)
-    # items = Item.objects.filter(id__in=items_id)
     total_price = 0
     for item in items:
         item.quantity = c[item.id]
