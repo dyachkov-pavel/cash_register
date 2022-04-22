@@ -30,7 +30,7 @@ pip install -r requirements.txt
 5. **Миграции**
 
 ```
-python manage.py makemigrations
+python manage.py makemigrations items
 ```
 
 ```
