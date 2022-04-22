@@ -52,7 +52,7 @@ http://localhost:8000/admin/
 
 8. **Возможно для правильной работы сервера надо будет скачать wkhtmltopdf**\
 https://wkhtmltopdf.org/downloads.html \
-Затем в файле utils.py указать свой путь установки в перемнной PDFKIT_CONFIG
+Затем в файле items/utils.py указать свой путь установки в перемнной PDFKIT_CONFIG
 
 9. **На веб-узел http://localhost:8000/cash_machine с помощью метода POST отправляется следующее тело запроса:** \
 { \
