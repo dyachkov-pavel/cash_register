@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheque</title>
+</head>
+<body>
+ООО Компания К
+<br>
+Добро пожаловать
+<br>
+КММ 00075411     #3969
+<br>
+ИНН 123123217831
+<br>
+ЭКЛЗ 38912310831231232
+<br>
+{{ date }}
+<br>
+{% for item in items %}
+    {{ item.title }} {{ item.quantity }} = {{ item.total_item_price }}
+    <br>
+{% endfor %}
+<br>
+ИТОГ: {{ total_price }}
+<br>
+НАЛИЧНЫМИ: {{ total_price }}
+<br>
+****************************
+<br>
+45627801#    3969
+</body>
+</html>
